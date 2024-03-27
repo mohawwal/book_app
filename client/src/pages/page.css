@@ -1,0 +1,319 @@
+.home {
+    height: 100vh;
+    font-size: 17px;
+    background-color: rgba(147, 168, 255, 0.868);
+}
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 0;
+}
+
+.home-header .header-center {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.circle-mode {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.868);
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-body {
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 20px;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.re-home-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    gap: 20px;
+}
+
+
+.home-button {
+    background-color: black;
+    color: rgb(233, 233, 233);
+    padding: 10px 20px;
+    border-radius: 28px;
+    border: none;
+    font-size: 13px;
+}
+
+.home-button a {
+    color: white;
+}
+
+.body-text {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.body-text .text-a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(14, 14, 14);
+}
+
+.text-a span {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.body-image {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    max-height: 500px;
+}
+
+.miniBook {
+    display: none;
+}
+
+.body-text h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    margin: 30px 0;
+}
+
+.body-text h2 span {
+    text-decoration: underline;
+}
+
+.text-b {
+    font-size: 16px;
+    color: rgb(26, 26, 26);
+}
+
+.text-c-btn {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-c-btn span {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: rgba(154, 154, 154, 0.468);
+    width: 100px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.c-btn-a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.c-btn-a .c-link {
+    color: black;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.text-c-btn span {
+    margin: 10px;
+}
+
+.check {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.check .check-a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.check-b {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.check-link {
+    color: black;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.check-a-img {
+    width: 29px;
+}
+
+.check-a-img img {
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .re-home-body {
+        padding: 0 10%;
+    }
+    .body-text h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .check-b, .check-link {
+        font-size: 13px;
+    }
+} 
+
+@media screen and (max-width: 704px) {
+    .home {
+        font-size: 15px;
+    }
+    .body-image {
+        display: none;
+    }
+    .body-text {
+        width: 100%;
+        font-size: 14px;
+    }
+    .miniBook {
+        display: block;
+        height: 130px;
+    }
+
+    .miniBook img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .body-text h2, .text-b {
+        text-align: center;
+    }
+    .text-c-btn {
+        display: flex;
+        align-items: center;
+    }
+    .body-text h2 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .c-link {
+        display: none;
+    }
+    .check {
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+/* BOOKS */
+
+.bookshelf {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.book {
+    background-color: bisque;
+    width: 160px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.length {
+    width: 100%;
+    text-align: center;
+}
+
+.book-btn {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.book-btn a {
+    color: whitesmoke;
+}
+
+.add {
+    margin: 30px;
+}
+
+/* UPDATE PAGE */
+
+.update {
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 360px;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.update-textbox input {
+    height: 35px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.update-btn {
+    padding: 10px 50px;
+    margin-top: 40px;
+}

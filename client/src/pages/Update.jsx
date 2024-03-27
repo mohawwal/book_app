@@ -36,14 +36,16 @@ const Update = () => {
     }
 
   return (
-    <div>
-      <h1>update the book</h1>
-      <input type="text" placeholder='title' onChange={handleChange} name='title' />
-      <input type="text" placeholder='desc' onChange={handleChange} name='desc' />
-      <input type='number' placeholder='price' onChange={handleChange} name="price" />
-      <input type="text" placeholder='cover' onChange={handleChange} name='cover' />
+    <div className='update'>
+      <h1>UPDATE THE BOOK</h1>
+      <div className='update-textbox'>
+        <input type="text" placeholder='title' onChange={handleChange} name='title' />
+        <input type="text" placeholder='desc' onChange={handleChange} name='desc' />
+        <input type='number' placeholder='price' onChange={handleChange} name="price" />
+        <input type="text" placeholder='cover' onChange={handleChange} name='cover' />
+      </div>
 
-      <button onClick={handleClick}>Add</button>
+      <button className='book-btn update-btn' onClick={handleClick}>Update Add</button>
     </div>
   )
 }

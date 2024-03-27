@@ -24,7 +24,7 @@ const Add = () => {
         
         try{
             await axios.post("http://localhost:3000/books", book)
-            navigate("/")
+            navigate("/books")
         }
         catch(err) {
             console.log(err)
